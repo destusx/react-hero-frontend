@@ -1,3 +1,47 @@
+@tailwind base;
+
+@layer base {
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+}
+
+@tailwind components;
+
+
+@layer components {
+  .btn-red-transparent {
+    @apply bg-transparent text-red-500 hover:bg-red-500 hover:text-white transition duration-200 ease-linear border border-red-500 py-1 px-4 rounded-2xl;
+  }
+
+  .input-custom {
+    @apply p-3 text-xl rounded-2xl mb-2
+  }
+}
+
+@tailwind utilities;
+
+@layer utilities {
+	.selected {
+
+	}
+	.selected > a {
+		display: block;
+		padding: 8px 13px;
+		color: red;
+		border: 1px solid #000;
+		border-radius: 10px;
+		font-weight: 700;
+	}
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
